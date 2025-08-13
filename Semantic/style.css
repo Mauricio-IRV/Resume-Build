@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman';
+    font-size: 12pt;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+body.darkmode {
+    background-color: #23305b;
+}
+
+body.darkmode,
+body.darkmode a {
+    color: #E6E1DC;
+    transition: background-color 0.3s ease;
+}
+
+#darkmode-toggle {
+    position: absolute;
+    padding: 4px 8px;
+    margin: 10px;
+    top: 0;
+    right: 0;
+}
+
+#resume-header {
+    display: flex;
+    font-size: 11pt;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    color: #000;
+}
+
+h1,
+h2 {
+    font-size: 14pt
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+h3 span {
+    font-weight: 300;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 500;
+}
+
+hr {
+    margin-bottom: 4px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects span {
+    font-style: italic;
+}
+
+li {
+    margin-left: 30pt;
+    padding-left: 8pt;
+}
+
+#skills div>span:nth-child(1) {
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    padding: 6pt 0pt;
+}
+
+@media print {
+
+    body.darkmode {
+        background-color: white;
+        color: black;
+    }
+
+    a {
+        color: black !important;
+    }
+
+    #darkmode-toggle {
+        display: none;
+    }
+
+    @page {
+        margin: 20pt 22pt;
+    }
+}
